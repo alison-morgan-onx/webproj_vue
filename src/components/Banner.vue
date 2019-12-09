@@ -1,5 +1,18 @@
 <template>
-  <div class="Banner"></div>
+  <div class="banner">
+    <v-toolbar>
+      <v-toolbar-title>Dad Jokes</v-toolbar-title>
+
+      <v-spacer></v-spacer>
+
+      <v-toolbar-items>
+        <router-link to="/">Home</router-link> |
+        <router-link to="/random">Random</router-link> |
+        <router-link to="/search">Search</router-link>
+        <router-view />
+      </v-toolbar-items>
+    </v-toolbar>
+  </div>
 </template>
 
 <script>

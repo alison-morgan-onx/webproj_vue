@@ -5,13 +5,11 @@
 </template>
 
 <script>
-import requestMixins from "@/mixins/getJokes.js";
 import JokeDisplay from "@/components/JokeDisplay.vue";
 
 export default {
   components: {JokeDisplay},
   name: "search",
-  mixins: [requestMixins],
   data() {
       return {
           jokeToDisplay: "",
